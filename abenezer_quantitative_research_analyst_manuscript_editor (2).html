@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abenezer | Quantitative Research Analyst &amp; Manuscript Editor</title>
+<meta name="description" content="Quantitative research analysis, manuscript editing, alpha reading and beta reading. Module Editor at Shiloh International Theological Seminary and Doctoral Researcher at Hawassa University.">
+<meta property="og:title" content="Abenezer | Quantitative Research Analyst &amp; Manuscript Editor">
+<meta property="og:description" content="Quantitative research analysis (SPSS &amp; R), APA 7th reporting, manuscript editing, and alpha/beta reading.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f8fa;
+  --bg-subtle: #edf1f5;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --ink: #131d26;
+  --ink-secondary: #2c3a47;
+  --muted: #526170;
+  --line: #d6dfe7;
+  --line-strong: #b8c6d4;
+  --teal: #0d5c63;
+  --teal-hover: #09454b;
+  --teal-light: #167a84;
+  --tint: #e2f1f2;
+  --tint-subtle: #eff7f8;
+  --amber: #94580a;
+  --amber-bg: #fef5e7;
+  --red: #b92b27;
+  --red-bg: #fdecea;
+  --green: #1b6e44;
+  --green-bg: #e8f6ee;
+  --on-teal: #ffffff;
+  --shadow-sm: 0 1px 3px rgba(19, 29, 38, 0.06), 0 1px 2px rgba(19, 29, 38, 0.04);
+  --shadow-md: 0 10px 30px -6px rgba(19, 29, 38, 0.08), 0 4px 12px -2px rgba(19, 29, 38, 0.04);
+  --shadow-lg: 0 20px 40px -12px rgba(19, 29, 38, 0.14);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --header-bg: rgba(246, 248, 250, 0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e141a;
+    --bg-subtle: #151e26;
+    --surface: #162029;
+    --surface-raised: #1c2833;
+    --ink: #ecf1f6;
+    --ink-secondary: #c8d4e0;
+    --muted: #95a5b5;
+    --line: #283644;
+    --line-strong: #3a4c5e;
+    --teal: #5ec2cc;
+    --teal-hover: #7ad0d9;
+    --teal-light: #3ba1ab;
+    --tint: #183037;
+    --tint-subtle: #13252b;
+    --amber: #f2b866;
+    --amber-bg: #2d2212;
+    --red: #ff8078;
+    --red-bg: #331a1b;
+    --green: #68d391;
+    --green-bg: #142e22;
+    --on-teal: #0d161b;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 12px 32px -6px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 24px 48px -12px rgba(0, 0, 0, 0.6);
+    --header-bg: rgba(14, 20, 26, 0.9);
+  }
+}
+
+html[data-theme="dark"] {
+  --bg: #0e141a;
+  --bg-subtle: #151e26;
+  --surface: #162029;
+  --surface-raised: #1c2833;
+  --ink: #ecf1f6;
+  --ink-secondary: #c8d4e0;
+  --muted: #95a5b5;
+  --line: #283644;
+  --line-strong: #3a4c5e;
+  --teal: #5ec2cc;
+  --teal-hover: #7ad0d9;
+  --teal-light: #3ba1ab;
+  --tint: #183037;
+  --tint-subtle: #13252b;
+  --amber: #f2b866;
+  --amber-bg: #2d2212;
+  --red: #ff8078;
+  --red-bg: #331a1b;
+  --green: #68d391;
+  --green-bg: #142e22;
+  --on-teal: #0d161b;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 32px -6px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 48px -12px rgba(0, 0, 0, 0.6);
+  --header-bg: rgba(14, 20, 26, 0.9);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 17px/1.68 "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: var(--teal);
+  transition: color 0.15s ease;
+}
+
+:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Sticky Top Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--header-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+header.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  gap: 12px 24px;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  font: 600 22px/1 "Newsreader", Georgia, serif;
+  text-decoration: none;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: var(--teal);
+  color: var(--on-teal);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 17px/1 "Newsreader", Georgia, serif;
+}
+
+.brand-tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  border-left: 1px solid var(--line-strong);
+  padding-left: 12px;
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .brand-tag {
+    display: inline-block;
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav.primary-nav a {
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 500;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+nav.primary-nav a:hover,
+nav.primary-nav a.active {
+  color: var(--ink);
+  background: var(--bg-subtle);
+}
+
+nav.primary-nav a.nav-cta {
+  background: var(--teal);
+  color: var(--on-teal);
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+nav.primary-nav a.nav-cta:hover {
+  background: var(--teal-hover);
+  color: var(--on-teal);
+}
+
+.icon-btn {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.icon-btn:hover {
+  border-color: var(--teal);
+  background: var(--tint-subtle);
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-nav-drawer {
+  display: none;
+  padding: 12px 0 18px;
+  border-top: 1px solid var(--line);
+}
+
+.mobile-nav-drawer.open {
+  display: grid;
+  gap: 6px;
+}
+
+.mobile-nav-drawer a {
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mobile-nav-drawer a:hover {
+  background: var(--bg-subtle);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: clamp(2.3rem, 4.6vw, 3.55rem);
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.28rem;
+  margin-bottom: 8px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 12.5px/1.2 "IBM Plex Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: var(--teal);
+  display: inline-block;
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 56px 0 72px;
+}
+
+.credential-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--teal);
+  background: var(--tint);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 1.3;
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+
+.badge.secondary {
+  border-color: var(--line-strong);
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--ink-secondary);
+  max-width: 50ch;
+  margin: 20px 0 28px;
+  line-height: 1.65;
+}
+
+.btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  font: 600 15.5px/1.2 "IBM Plex Sans", sans-serif;
+  text-decoration: none;
+  border: 2px solid var(--teal);
+  background: var(--teal);
+  color: var(--on-teal);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--teal-hover);
+  border-color: var(--teal-hover);
+  transform: translateY(-1px);
+}
+
+.btn.alt {
+  background: transparent;
+  color: var(--teal);
+}
+
+.btn.alt:hover {
+  background: var(--tint);
+  color: var(--teal);
+}
+
+.btn.sm {
+  padding: 8px 14px;
+  font-size: 13.5px;
+  border-width: 1px;
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.metric-item strong {
+  display: block;
+  font: 600 1.25rem/1.2 "Newsreader", Georgia, serif;
+  color: var(--ink);
+}
+
+.metric-item span {
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+/* Interactive Workbench Figure */
+.workbench {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin: 0;
+}
+
+.wb-header {
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.wb-title {
+  font: 600 12.5px/1.2 "IBM Plex Sans", sans-serif;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wb-dots {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.wb-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  display: inline-block;
+}
+
+.wb-tabs {
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+}
+
+.wb-tab {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: 500 12.5px/1 "IBM Plex Sans", sans-serif;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wb-tab:hover {
+  color: var(--ink);
+}
+
+.wb-tab.active {
+  background: var(--teal);
+  color: var(--on-teal);
+  font-weight: 600;
+}
+
+.wb-body {
+  padding: 22px 24px;
+}
+
+.wb-panel {
+  display: none;
+}
+
+.wb-panel.active {
+  display: block;
+}
+
+.wb-subbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.wb-caption {
+  font: 500 12.5px/1.3 "IBM Plex Sans", sans-serif;
+  color: var(--muted);
+}
+
+.pill-switch {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.pill-btn {
+  border: 1px solid var(--line);
+  background: var(--bg-subtle);
+  color: var(--muted);
+  font: 500 11.5px/1 "IBM Plex Sans", sans-serif;
+  padding: 5px 9px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pill-btn.active {
+  border-color: var(--teal);
+  background: var(--tint);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* APA Table Styling */
+table.apa-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+}
+
+table.apa-table th,
+table.apa-table td {
+  text-align: left;
+  padding: 8px 10px;
+  border-top: 1px solid var(--line);
+}
+
+table.apa-table thead th {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+table.apa-table tbody tr:last-child td {
+  border-bottom: 2px solid var(--ink);
+}
+
+td.n, th.n {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.87rem;
+}
+
+.table-note {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+  margin: 6px 0 0;
+}
+
+.code-snippet {
+  background: var(--bg-subtle);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font: 400 12.5px/1.55 "IBM Plex Mono", monospace;
+  color: var(--ink);
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.code-snippet .comment {
+  color: var(--muted);
+}
+
+.code-snippet .kw {
+  color: var(--teal);
+  font-weight: 500;
+}
+
+/* Redline / Tracked Changes Box */
+.manuscript-box {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.ed-prose {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.72;
+  margin: 8px 0 0;
+  color: var(--ink);
+  background: var(--bg-subtle);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--teal);
+}
+
+del {
+  color: var(--red);
+  background: var(--red-bg);
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+ins {
+  color: var(--green);
+  background: var(--green-bg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0 3px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.margin-comment {
+  margin-top: 10px;
+  padding: 9px 12px;
+  background: var(--amber-bg);
+  border-left: 3px solid var(--amber);
+  border-radius: 4px;
+  font-size: 12.5px;
+  color: var(--ink-secondary);
+}
+
+.margin-comment strong {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.wb-footer {
+  padding: 11px 24px;
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Sections */
+section {
+  padding: 72px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.section-head p {
+  color: var(--muted);
+  max-width: 60ch;
+  margin: 6px 0 0;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.two p {
+  margin: 0 0 16px;
+  color: var(--ink-secondary);
+}
+
+h3.sub {
+  font-size: 0.92rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+/* Interactive Skill Accordion / List */
+ul.tick {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+ul.tick li {
+  padding: 12px 0 12px 28px;
+  border-top: 1px solid var(--line);
+  position: relative;
+  color: var(--ink);
+}
+
+ul.tick li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+ul.tick li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+ul.sq li::before {
+  border-radius: 2px;
+}
+
+.skill-detail-box {
+  margin-top: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.method-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.method-pill {
+  border: 1px solid var(--line);
+  background: var(--bg-subtle);
+  color: var(--ink-secondary);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font: 500 13px/1.2 "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.method-pill:hover {
+  border-color: var(--teal);
+}
+
+.method-pill.active {
+  background: var(--teal);
+  color: var(--on-teal);
+  border-color: var(--teal);
+  font-weight: 600;
+}
+
+.method-panel {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+}
+
+.method-panel strong {
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.1rem;
+}
+
+.method-meta {
+  display: inline-block;
+  margin-top: 8px;
+  font: 500 12px/1.2 "IBM Plex Mono", monospace;
+  color: var(--teal);
+  background: var(--tint);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Deliverable Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal);
+}
+
+.card.lead {
+  border-top: 3px solid var(--teal);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--tint);
+  color: var(--teal);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.file-tag {
+  font: 500 11.5px/1 "IBM Plex Mono", monospace;
+  color: var(--muted);
+  background: var(--bg-subtle);
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.card-action {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--teal);
+  font: 600 13.5px/1 "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.preview-link:hover {
+  text-decoration: underline;
+}
+
+/* Reader Diagnostic Box */
+.reader-helper {
+  margin-top: 28px;
+  background: var(--tint-subtle);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reader-helper-text h4 {
+  font-size: 1.12rem;
+  margin-bottom: 4px;
+}
+
+.reader-helper-text p {
+  margin: 0;
+  font-size: 0.93rem;
+  color: var(--muted);
+}
+
+.stage-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Process Steps */
+ol.steps {
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  counter-reset: s;
+}
+
+ol.steps li {
+  counter-increment: s;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--teal);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+ol.steps li::before {
+  content: "Step 0" counter(s);
+  display: inline-block;
+  font: 600 12px/1 "IBM Plex Mono", monospace;
+  color: var(--teal);
+  background: var(--tint);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+ol.steps b {
+  display: block;
+  font: 600 1.2rem/1.25 "Newsreader", Georgia, serif;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+ol.steps span {
+  color: var(--muted);
+  font-size: 0.94rem;
+  display: block;
+}
+
+/* About Grid */
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.meta-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+
+.meta-box h3 {
+  font-size: 0.9rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+.meta-box p {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.tools span {
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  font-weight: 500;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.tools span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+/* Project Brief & Scope Estimator Section */
+.brief-builder {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.form-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.field-group label {
+  display: block;
+  font: 600 13.5px/1.3 "IBM Plex Sans", sans-serif;
+  color: var(--ink);
+  margin-bottom: 7px;
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.choice-chip {
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+  color: var(--ink-secondary);
+  padding: 8px 13px;
+  border-radius: var(--radius-sm);
+  font: 500 13.5px/1.2 "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.choice-chip:hover {
+  border-color: var(--teal);
+}
+
+.choice-chip.selected {
+  background: var(--teal);
+  color: var(--on-teal);
+  border-color: var(--teal);
+  font-weight: 600;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  color: var(--ink);
+  font: 400 14.5px/1.4 "IBM Plex Sans", sans-serif;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 78px;
+}
+
+.brief-preview {
+  background: var(--bg-subtle);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 22px;
+}
+
+.brief-preview-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-preview-head span {
+  font: 600 12.5px/1 "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--teal);
+}
+
+.brief-output {
+  font: 400 13.5px/1.6 "IBM Plex Mono", monospace;
+  color: var(--ink);
+  white-space: pre-wrap;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.copy-toast {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  margin-top: 8px;
+  min-height: 20px;
+}
+
+/* Modal for Deliverable Previews */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 18, 24, 0.62);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.modal-card {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  max-width: 640px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  animation: modalIn 0.18s ease-out;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-head {
+  padding: 18px 24px;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body {
+  padding: 24px;
+  max-height: 72vh;
+  overflow-y: auto;
+}
+
+.modal-foot {
+  padding: 14px 24px;
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 40px 0 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .hero, .two, .brief-builder {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  ol.steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  nav.primary-nav {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 560px) {
+  ol.steps, .about-cards, .input-row, .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+  body {
+    font-size: 16px;
+  }
+  .brief-builder {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="wrap">
+    <header class="top">
+      <div class="brand-wrap">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>Abenezer</span>
+        </a>
+        <span class="brand-tag">Quantitative Research &amp; Editorial Practice</span>
+      </div>
+
+      <div class="nav-right">
+        <nav class="primary-nav" aria-label="Primary Sections">
+          <a href="#quant">Quantitative Research</a>
+          <a href="#deliverables">Deliverables</a>
+          <a href="#editing">Editing</a>
+          <a href="#readers">Alpha &amp; Beta Reading</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+          <a href="#inquire" class="nav-cta">Project Brief</a>
+        </nav>
+
+        <button type="button" class="icon-btn" id="themeToggleBtn" aria-label="Toggle color theme" title="Toggle light/dark mode">
+          <svg id="themeIconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg id="themeIconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+      <a href="#quant" class="mobile-link">Quantitative Research</a>
+      <a href="#deliverables" class="mobile-link">Deliverables</a>
+      <a href="#editing" class="mobile-link">Manuscript Editing</a>
+      <a href="#readers" class="mobile-link">Alpha &amp; Beta Reading</a>
+      <a href="#process" class="mobile-link">Process</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#inquire" class="mobile-link">Build a Project Brief</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <main id="top">
+    <!-- HERO -->
+    <div class="hero">
+      <div>
+        <div class="credential-row">
+          <div class="badge"><span class="badge-dot"></span>Module Editor, Shiloh International Theological Seminary</div>
+          <div class="badge secondary">Doctoral Researcher, Hawassa University</div>
+        </div>
+        <h1>Quantitative research analysis and manuscript editing</h1>
+        <p class="lede">I analyze survey and numerical data, report the results clearly in APA style, and edit the manuscripts that carry them. Every number traces back to a clean dataset and saved syntax—so you receive finished, defensible work.</p>
+        <div class="btns">
+          <a class="btn" href="#deliverables">Explore deliverables</a>
+          <a class="btn alt" href="#inquire">Scope a project</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <strong>SPSS &amp; R</strong>
+            <span>Reproducible scripts &amp; clean codebooks</span>
+          </div>
+          <div class="metric-item">
+            <strong>APA 7th Ed.</strong>
+            <span>Publication-ready tables &amp; write-ups</span>
+          </div>
+          <div class="metric-item">
+            <strong>3 Languages</strong>
+            <span>English, Amharic &amp; Sidamu Afoo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE WORKBENCH -->
+      <figure class="workbench" aria-label="Interactive illustration of statistical reporting and manuscript editing">
+        <div class="wb-header">
+          <div class="wb-title">
+            <span class="wb-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Interactive Work Sample</span>
+          </div>
+          <div class="wb-tabs" role="tablist" aria-label="Sample views">
+            <button type="button" class="wb-tab active" role="tab" aria-selected="true" data-wb-tab="combined">Combined View</button>
+            <button type="button" class="wb-tab" role="tab" aria-selected="false" data-wb-tab="script">R / SPSS Syntax</button>
+            <button type="button" class="wb-tab" role="tab" aria-selected="false" data-wb-tab="redline">Editorial Modes</button>
+          </div>
+        </div>
+
+        <div class="wb-body">
+          <!-- Panel 1: Combined Table + Redline -->
+          <div class="wb-panel active" id="wb-panel-combined" role="tabpanel">
+            <div class="wb-subbar">
+              <span class="wb-caption">Table 1. Independent-Samples t-Test (Illustrative Values)</span>
+              <span class="file-tag">APA 7th Format</span>
+            </div>
+            <table class="apa-table">
+              <thead>
+                <tr>
+                  <th>Group</th>
+                  <th class="n"><em>n</em></th>
+                  <th class="n"><em>M</em></th>
+                  <th class="n"><em>SD</em></th>
+                  <th class="n"><em>t</em>(94)</th>
+                  <th class="n"><em>p</em></th>
+                  <th class="n"><em>d</em></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Group A (Intervention)</td>
+                  <td class="n">48</td>
+                  <td class="n">3.82</td>
+                  <td class="n">0.61</td>
+                  <td class="n" rowspan="2">3.16</td>
+                  <td class="n" rowspan="2">.002</td>
+                  <td class="n" rowspan="2">0.65</td>
+                </tr>
+                <tr>
+                  <td>Group B (Comparison)</td>
+                  <td class="n">48</td>
+                  <td class="n">3.41</td>
+                  <td class="n">0.66</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="table-note">Note. M = mean; SD = standard deviation; d = Cohen’s d effect size.</p>
+
+            <div class="manuscript-box">
+              <div class="wb-subbar">
+                <span class="wb-caption">Manuscript Excerpt (Tracked Changes)</span>
+              </div>
+              <p class="ed-prose">
+                The results <del>was shown to be</del> <ins>were statistically</ins> significant, <del>which indicates that</del> <ins>indicating that</ins> the intervention <del>worked</del> <ins>improved post-test scores, <em>t</em>(94) = 3.16, <em>p</em> = .002, <em>d</em> = 0.65</ins>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Panel 2: Reproducible Syntax -->
+          <div class="wb-panel" id="wb-panel-script" role="tabpanel">
+            <div class="wb-subbar">
+              <span class="wb-caption">Every table is backed by saved, repeatable commands</span>
+              <div class="pill-switch">
+                <button type="button" class="pill-btn active" data-syntax="r">R Script (.R)</button>
+                <button type="button" class="pill-btn" data-syntax="spss">SPSS Syntax (.sps)</button>
+              </div>
+            </div>
+            <pre class="code-snippet" id="syntaxDisplay"><span class="comment"># 1. Reliability &amp; Composite Score Calculation</span>
+psych::alpha(df[, c(<span class="kw">"q1"</span>, <span class="kw">"q2"</span>, <span class="kw">"q3"</span>, <span class="kw">"q4"</span>, <span class="kw">"q5"</span>)])
+df$post_score &lt;- rowMeans(df[, c(<span class="kw">"q1"</span>:<span class="kw">"q5"</span>)], na.rm = TRUE)
+
+<span class="comment"># 2. Independent-Samples t-Test &amp; Effect Size (Table 1)</span>
+t_res &lt;- t.test(post_score ~ group, data = df, var.equal = TRUE)
+eff_d &lt;- effectsize::cohens_d(post_score ~ group, data = df)
+print(t_res); print(eff_d)</pre>
+            <p class="table-note" style="margin-top:10px">Deliverable includes full commented script so supervisors or peer reviewers can verify every step.</p>
+          </div>
+
+          <!-- Panel 3: Interactive Editorial Modes -->
+          <div class="wb-panel" id="wb-panel-redline" role="tabpanel">
+            <div class="wb-subbar">
+              <span class="wb-caption">Toggle draft state to see how edits preserve your voice:</span>
+              <div class="pill-switch">
+                <button type="button" class="pill-btn active" data-edmode="tracked">Tracked Changes</button>
+                <button type="button" class="pill-btn" data-edmode="clean">Clean Final</button>
+                <button type="button" class="pill-btn" data-edmode="original">Author Draft</button>
+              </div>
+            </div>
+            <p class="ed-prose" id="editorialProseDisplay">
+              Although previous studies <del>has looked at</del> <ins>have examined</ins> leadership styles, <del>there is nobody who checked how it works</del> <ins>few empirical investigations have tested how these practices operate</ins> within seminary modules.
+            </p>
+            <div class="margin-comment" id="editorialCommentBox">
+              <strong>Editorial Note (Copyediting &amp; Tone):</strong> Replaced informal phrasing ("nobody who checked") with precise scholarly register while preserving your exact claim and transition into the research gap.
+            </div>
+          </div>
+        </div>
+
+        <div class="wb-footer">
+          <span>Table: quantitative analysis &amp; reporting</span>
+          <span>Marks: developmental &amp; copyediting</span>
+        </div>
+      </figure>
+    </div>
+
+    <!-- QUANTITATIVE RESEARCH -->
+    <section id="quant">
+      <div class="two">
+        <div>
+          <span class="eyebrow">Statistical Rigor</span>
+          <h2>Quantitative research</h2>
+          <p>I support theses, dissertations, journal articles, and organizational studies, from the initial research design to the final results chapter. Every number in your report can be traced back to a clean dataset and a saved script.</p>
+          <p>I work in <strong>SPSS</strong> and <strong>R</strong>, and I write results in clear <strong>APA 7th edition</strong> style so your committee, reviewers, and readers can follow the evidence without friction.</p>
+
+          <div class="skill-detail-box">
+            <h3 class="sub" style="margin-bottom:8px">Interactive Method Explorer</h3>
+            <p style="font-size:0.88rem;color:var(--muted);margin-bottom:12px">Select a stage to see how I support your study:</p>
+            <div class="method-pills" role="tablist" aria-label="Quantitative methods">
+              <button type="button" class="method-pill active" data-method="design">Design &amp; Sampling</button>
+              <button type="button" class="method-pill" data-method="cleaning">Cleaning &amp; Codebooks</button>
+              <button type="button" class="method-pill" data-method="inferential">Inferential Models</button>
+              <button type="button" class="method-pill" data-method="psychometrics">Scale Reliability</button>
+            </div>
+            <div class="method-panel" id="methodDetailPanel">
+              <strong>Survey Design, Sampling &amp; Power Planning</strong>
+              Aligning questionnaire items directly with your research questions and hypotheses, determining minimum sample size requirements (a priori power analysis), and structuring Likert-type instruments for valid measurement.
+              <div><span class="method-meta">Output: Sampling Matrix + Instrument Alignment Table</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="sub">Core Quantitative Capabilities</h3>
+          <ul class="tick">
+            <li><strong>Survey &amp; questionnaire design:</strong> sampling strategy, power calculation, and sample size planning</li>
+            <li><strong>Data preparation:</strong> data cleaning, variable recoding, outlier screening, and missing-data handling</li>
+            <li><strong>Hypothesis testing:</strong> descriptive statistics, independent &amp; paired <em>t</em>-tests, ANOVA, chi-square (&chi;<sup>2</sup>), correlation, and multiple regression</li>
+            <li><strong>Psychometrics &amp; scale validation:</strong> internal consistency reliability (Cronbach’s &alpha;) and exploratory factor analysis (EFA)</li>
+            <li><strong>Clear statistical reporting:</strong> publication-ready tables, figures, and plain-language interpretation of what the findings mean</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELIVERABLES -->
+    <section id="deliverables">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Concrete Hand-off</span>
+          <h2>What you receive</h2>
+          <p>Each quantitative project ends with organized, self-contained files you can submit directly, share with a supervisor, or reuse for future publications.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card lead">
+          <div>
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </span>
+              <span class="file-tag">.sav / .csv / .xlsx</span>
+            </div>
+            <h3>Clean dataset and data dictionary</h3>
+            <p>A checked, labeled dataset with a comprehensive codebook that defines every variable, value label, scale composite, and missing-value rule.</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="preview-link" data-preview="codebook">Inspect sample codebook &rarr;</button>
+          </div>
+        </div>
+
+        <div class="card lead">
+          <div>
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </span>
+              <span class="file-tag">.R / .sps</span>
+            </div>
+            <h3>Analysis syntax or R script</h3>
+            <p>The exact, step-by-step commands used to run your analysis, commented clearly so every test can be repeated and verified at any stage.</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="preview-link" data-preview="syntax">Inspect sample script &rarr;</button>
+          </div>
+        </div>
+
+        <div class="card lead">
+          <div>
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </span>
+              <span class="file-tag">APA 7th .docx</span>
+            </div>
+            <h3>Results tables and figures</h3>
+            <p>Cleanly structured tables and high-resolution charts formatted in strict APA style, ready to paste directly into your chapter or journal submission.</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="preview-link" data-preview="tables">Inspect sample table &rarr;</button>
+          </div>
+        </div>
+
+        <div class="card lead">
+          <div>
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              </span>
+              <span class="file-tag">Narrative .docx</span>
+            </div>
+            <h3>Written results and interpretation</h3>
+            <p>A clear, objective results section that states both what the numbers show and what they do not, connecting each test to your research questions.</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="preview-link" data-preview="results">Inspect sample write-up &rarr;</button>
+          </div>
+        </div>
+
+        <div class="card lead">
+          <div>
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </span>
+              <span class="file-tag">Methodology .docx</span>
+            </div>
+            <h3>Methods write-up</h3>
+            <p>Research design, target population, sampling frame, instruments, reliability coefficients, and analytical procedures described for your methodology chapter.</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="preview-link" data-preview="methods">Inspect sample methods &rarr;</button>
+          </div>
+        </div>
+
+        <div class="card lead">
+          <div>
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </span>
+              <span class="file-tag">Tracked + Clean</span>
+            </div>
+            <h3>Edited manuscript with change log</h3>
+            <p>Your manuscript returned in both Word Tracked Changes and clean final versions, accompanied by an editorial memo explaining key revisions.</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="preview-link" data-preview="changelog">Inspect sample change log &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANUSCRIPT EDITING -->
+    <section id="editing">
+      <div class="two">
+        <div>
+          <span class="eyebrow">Scholarly &amp; Curriculum Precision</span>
+          <h2>Manuscript editor</h2>
+          <p>I serve as the <strong>Module Editor at Shiloh International Theological Seminary</strong>, where I edit and prepare structured course modules for students. That work requires keeping long instructional and scholarly documents accurate, consistent, and accessible for a defined audience.</p>
+          <p>I bring the same care to academic papers, theses, dissertations, and book manuscripts. I preserve your scholarly voice and argument while removing ambiguity, repetition, and mechanical errors that get in the reader's way.</p>
+        </div>
+
+        <div>
+          <h3 class="sub">Editorial Capabilities</h3>
+          <ul class="tick">
+            <li><strong>Developmental editing:</strong> strengthening chapter architecture, thesis progression, and logical cohesion</li>
+            <li><strong>Academic &amp; nonfiction copyediting:</strong> refining grammar, syntax, transitions, and scholarly tone</li>
+            <li><strong>Proofreading:</strong> final-pass verification of typography, tables, headings, and page-level consistency before submission or print</li>
+            <li><strong>Module &amp; course-material editing:</strong> structuring pedagogical objectives, readings, and assessments for seminary and university curricula</li>
+            <li><strong>Reference &amp; citation auditing:</strong> cross-checking in-text citations against bibliographies and formatting libraries with <strong>Zotero</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALPHA & BETA READING -->
+    <section id="readers">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Constructive Reader Feedback</span>
+          <h2>Alpha reader and beta reader</h2>
+          <p>Authors often need an attentive, articulate reader before line-by-line editing begins. I read your draft as your intended audience would and deliver a structured diagnostic report.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div>
+            <div class="card-top">
+              <h3>Alpha reading</h3>
+              <span class="file-tag">Early Drafts</span>
+            </div>
+            <p>For foundational or first-complete drafts. I evaluate the big picture: the central thesis or premise, structural arc, pacing, gaps in logic, and whether each chapter earns its place. You receive a detailed editorial letter with actionable structural recommendations.</p>
+            <ul class="tick sq">
+              <li>Macro-structure and argument evaluation</li>
+              <li>Chapter-by-chapter developmental notes</li>
+              <li>Identification of missing evidence or redundancy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="card-top">
+              <h3>Beta reading</h3>
+              <span class="file-tag">Near-Final Drafts</span>
+            </div>
+            <p>For polished drafts prior to final copyediting or publication. I read from the perspective of your target reader and flag confusing passages, weak transitions, tone shifts, and moments where momentum drops—so you know exactly how the finished book or monograph will land.</p>
+            <ul class="tick sq">
+              <li>Clarity, pacing, and reader-engagement feedback</li>
+              <li>Passage-level margin reactions</li>
+              <li>Holistic reader-experience summary</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="reader-helper">
+        <div class="reader-helper-text">
+          <h4>Not sure which editorial stage fits your manuscript?</h4>
+          <p id="stageHelperResult">Select your current draft status on the right for a tailored recommendation.</p>
+        </div>
+        <div class="stage-selector">
+          <button type="button" class="choice-chip" data-stage="rough">Rough / First Draft</button>
+          <button type="button" class="choice-chip" data-stage="complete">Complete Draft, Unsure of Flow</button>
+          <button type="button" class="choice-chip" data-stage="polished">Polished, Ready for Submission</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+      <span class="eyebrow">Transparent Workflow</span>
+      <h2>How a project runs</h2>
+      <ol class="steps">
+        <li>
+          <b>Brief</b>
+          <span>You share your dataset, research instruments, or manuscript along with your goal, style guide, and deadline. We agree on a clear scope and timeline.</span>
+        </li>
+        <li>
+          <b>Work</b>
+          <span>I run the statistical models in R or SPSS, or edit your manuscript using Word Tracked Changes and marginal comments.</span>
+        </li>
+        <li>
+          <b>Review</b>
+          <span>You inspect the draft tables, scripts, or edited chapters and ask questions. I walk you through the findings and revise until everything fits your purpose.</span>
+        </li>
+        <li>
+          <b>Deliver</b>
+          <span>You receive the final cleaned dataset, reproducible syntax, publication-ready tables, clean manuscript, and a concise change log.</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <span class="eyebrow">Scholar &amp; Practitioner</span>
+      <h2>About me</h2>
+      <div class="two">
+        <div>
+          <p>I am a doctoral researcher in <strong>Educational Leadership and Policy Studies at Hawassa University</strong>, holding an <strong>MA in Counseling Psychology</strong>. My research spans <em>AI governance in academic institutions</em> and <em>priestly Christology in Hebrews</em>, allowing me to work fluently across empirical social-science methodology and rigorous theological and humanities scholarship.</p>
+          <p>Alongside my academic research and my work as Module Editor at <strong>Shiloh International Theological Seminary</strong>, I lead <strong>Equip Training Center</strong> and have published several books, including <em>“Forgiveness.”</em></p>
+
+          <h3 style="margin-top:28px;font-size:1.1rem">Primary Tools &amp; Standards</h3>
+          <div class="tools">
+            <span>SPSS</span>
+            <span>R &amp; RStudio</span>
+            <span>Zotero</span>
+            <span>Word Tracked Changes</span>
+            <span>APA 7th Style</span>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="meta-box">
+            <h3>Academic Training</h3>
+            <p>PhD Researcher (Educational Leadership &amp; Policy Studies, Hawassa University)<br><span style="color:var(--muted);font-weight:400;font-size:0.9rem">MA in Counseling Psychology</span></p>
+          </div>
+          <div class="meta-box">
+            <h3>Editorial &amp; Leadership</h3>
+            <p>Module Editor, Shiloh International Theological Seminary<br><span style="color:var(--muted);font-weight:400;font-size:0.9rem">Director, Equip Training Center</span></p>
+          </div>
+          <div class="meta-box">
+            <h3>Languages</h3>
+            <p>English, Amharic &amp; Sidamu Afoo</p>
+          </div>
+          <div class="meta-box">
+            <h3>Location &amp; Reach</h3>
+            <p>Based in Hawassa, Ethiopia<br><span style="color:var(--muted);font-weight:400;font-size:0.9rem">Collaborating with clients worldwide</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PROJECT BRIEF BUILDER -->
+    <section id="inquire">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Start a Conversation</span>
+          <h2>Prepare a project brief</h2>
+          <p>Select your project type and needs below to generate a structured project summary you can copy or send directly to start step one.</p>
+        </div>
+      </div>
+
+      <div class="brief-builder">
+        <div class="form-grid">
+          <div class="field-group">
+            <label>1. Which service do you need?</label>
+            <div class="chip-group" id="serviceChipGroup">
+              <button type="button" class="choice-chip selected" data-service="Quantitative Research Analysis (SPSS / R)">Quantitative Analysis</button>
+              <button type="button" class="choice-chip" data-service="Manuscript Editing (Developmental / Copyediting)">Manuscript Editing</button>
+              <button type="button" class="choice-chip" data-service="Course Module / Curriculum Editing">Module Editing</button>
+              <button type="button" class="choice-chip" data-service="Alpha or Beta Reading Report">Alpha / Beta Reading</button>
+              <button type="button" class="choice-chip" data-service="Full Quantitative Analysis + Manuscript Editing">Combined Quant + Editing</button>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="field-group">
+              <label for="docTypeSelect">2. Document or study type</label>
+              <select id="docTypeSelect">
+                <option value="Doctoral Dissertation / Master's Thesis">Dissertation or Master's Thesis</option>
+                <option value="Peer-Reviewed Journal Article">Journal Article Manuscript</option>
+                <option value="Book Manuscript">Book Manuscript</option>
+                <option value="Seminary / University Course Module">Seminary / Course Module</option>
+                <option value="Organizational / NGO Evaluation Study">Organizational Survey Study</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="timelineInput">3. Target timeline or deadline</label>
+              <input type="text" id="timelineInput" placeholder="e.g., 3 weeks / November 15" value="Within 2–3 weeks">
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="scopeNotesInput">4. Brief details (sample size, word count, or research topic)</label>
+            <textarea id="scopeNotesInput" placeholder="e.g., Survey of N = 240 participants in SPSS; need reliability check, regression tables in APA style, and editing of Chapters 3–4."></textarea>
+          </div>
+        </div>
+
+        <div class="brief-preview">
+          <div class="brief-preview-head">
+            <span>Generated Project Scope</span>
+            <span class="file-tag">Ready to share</span>
+          </div>
+          <div class="brief-output" id="briefOutputText">PROJECT BRIEF FOR ABENEZER
+----------------------------------------
+Service Needed : Quantitative Research Analysis (SPSS / R)
+Project Type   : Doctoral Dissertation / Master's Thesis
+Target Timeline: Within 2–3 weeks
+Scope &amp; Notes  : Looking for clean, reproducible deliverables and clear feedback.
+----------------------------------------
+Requested Deliverables: Clean files, tracked changes / reproducible syntax, and review walkthrough.</div>
+          <div class="btns">
+            <button type="button" class="btn sm" id="copyBriefBtn">Copy Brief to Clipboard</button>
+            <button type="button" class="btn alt sm" id="emailBriefBtn">Open in Email App</button>
+            <button type="button" class="btn alt sm" id="resetBriefBtn">Reset</button>
+          </div>
+          <div class="copy-toast" id="copyToast" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Abenezer. Quantitative research, manuscript editing, alpha and beta reading.</div>
+    <div class="footer-links">
+      <a href="#top">Back to top &uarr;</a>
+      <a href="#quant">Quantitative</a>
+      <a href="#deliverables">Deliverables</a>
+      <a href="#editing">Editing</a>
+      <a href="#about">About</a>
+    </div>
+  </footer>
+</div>
+
+<!-- SAMPLE DELIVERABLE PREVIEW MODAL -->
+<div class="modal-backdrop" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3 id="modalTitle" style="margin:0;font-size:1.2rem">Deliverable Sample</h3>
+      <button type="button" class="icon-btn" id="closeModalBtn" aria-label="Close preview">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="modal-body" id="modalBodyContent"></div>
+    <div class="modal-foot">
+      <button type="button" class="btn sm" id="modalUseScopeBtn">Include in Project Brief</button>
+      <button type="button" class="btn alt sm" id="modalDismissBtn">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  function each(list, fn) {
+    if (!list) return;
+    for (var i = 0; i < list.length; i++) {
+      fn(list[i], i);
+    }
+  }
+
+  var syntaxSnippets = {
+    r: '<span class="comment"># 1. Reliability &amp; Composite Score Calculation</span>\npsych::alpha(df[, c(<span class="kw">"q1"</span>, <span class="kw">"q2"</span>, <span class="kw">"q3"</span>, <span class="kw">"q4"</span>, <span class="kw">"q5"</span>)])\ndf$post_score &lt;- rowMeans(df[, c(<span class="kw">"q1"</span>:<span class="kw">"q5"</span>)], na.rm = TRUE)\n\n<span class="comment"># 2. Independent-Samples t-Test &amp; Effect Size (Table 1)</span>\nt_res &lt;- t.test(post_score ~ group, data = df, var.equal = TRUE)\neff_d &lt;- effectsize::cohens_d(post_score ~ group, data = df)\nprint(t_res); print(eff_d)',
+    spss: '<span class="comment">* 1. Scale Reliability (Cronbach\'s Alpha) &amp; Mean Score.</span>\n<span class="kw">RELIABILITY</span> /VARIABLES=q1 q2 q3 q4 q5 /SCALE(\'Post Score\') ALL /MODEL=ALPHA.\n<span class="kw">COMPUTE</span> post_score = MEAN.4(q1, q2, q3, q4, q5).\n<span class="kw">EXECUTE</span>.\n\n<span class="comment">* 2. Independent-Samples t-Test with Effect Sizes (Table 1).</span>\n<span class="kw">T-TEST</span> GROUPS=group(1 2)\n  /MISSING=ANALYSIS\n  /VARIABLES=post_score\n  /ES DISPLAY(TRUE) /CRITERIA=CI(.95).'
+  };
+
+  var edModes = {
+    tracked: {
+      html: 'Although previous studies <del>has looked at</del> <ins>have examined</ins> leadership styles, <del>there is nobody who checked how it works</del> <ins>few empirical investigations have tested how these practices operate</ins> within seminary modules.',
+      note: '<strong>Editorial Note (Copyediting &amp; Tone):</strong> Replaced informal phrasing ("nobody who checked") with precise scholarly register while preserving your exact claim and transition into the research gap.'
+    },
+    clean: {
+      html: 'Although previous studies have examined leadership styles, few empirical investigations have tested how these practices operate within seminary modules.',
+      note: '<strong>Clean Final Version:</strong> Ready for submission—concise, grammatically consistent, and aligned with academic style conventions.'
+    },
+    original: {
+      html: 'Although previous studies has looked at leadership styles, there is nobody who checked how it works within seminary modules.',
+      note: '<strong>Original Author Draft:</strong> Contains strong core meaning and direction, but subject-verb disagreement and conversational phrasing weaken scholarly authority.'
+    }
+  };
+
+  var methodData = {
+    design: {
+      title: 'Survey Design, Sampling & Power Planning',
+      body: 'Aligning questionnaire items directly with your research questions and hypotheses, determining minimum sample size requirements (a priori power analysis), and structuring Likert-type instruments for valid measurement.',
+      meta: 'Output: Sampling Matrix + Instrument Alignment Table'
+    },
+    cleaning: {
+      title: 'Data Cleaning, Coding & Missing-Data Handling',
+      body: 'Screening raw exports from field surveys, standardizing variable names and value labels, reverse-coding negative items, documenting missingness patterns, and creating a clean master dataset.',
+      meta: 'Output: Checked .sav/.csv Dataset + Codebook'
+    },
+    inferential: {
+      title: 'Descriptive & Inferential Statistical Modeling',
+      body: 'Checking parametric assumptions (normality, homogeneity of variance, multicollinearity) and running t-tests, one-way/factorial ANOVA, chi-square tests, Pearson/Spearman correlations, and linear or logistic regression.',
+      meta: 'Output: APA 7th Tables + Effect Sizes + R/SPSS Syntax'
+    },
+    psychometrics: {
+      title: 'Reliability (Cronbach’s Alpha) & Factor Analysis',
+      body: 'Evaluating internal consistency across multi-item subscales, inspecting item-total correlations, and running Exploratory Factor Analysis (EFA) to verify construct dimensionality.',
+      meta: 'Output: Psychometric Summary Table + Scale Diagnostics'
+    }
+  };
+
+  var stageRecommendations = {
+    rough: 'Recommendation: Start with Alpha Reading to test your chapter architecture, central argument, and pacing before spending time polishing individual sentences.',
+    complete: 'Recommendation: Choose Beta Reading + Developmental Editing so you see how target readers experience your flow and receive structural solutions for weak transitions.',
+    polished: 'Recommendation: Go straight to Copyediting, Zotero Reference Checking & Proofreading to ensure clean grammar, consistent style, and submission-ready formatting.'
+  };
+
+  var deliverableSamples = {
+    codebook: {
+      title: 'Sample Deliverable: Data Dictionary & Codebook',
+      service: 'Quantitative Research Analysis (SPSS / R)',
+      html: '<p style="margin-top:0;color:var(--muted)">Every cleaned dataset includes a variable-by-variable codebook so you or your advisor can inspect exact coding rules:</p>' +
+            '<table class="apa-table"><thead><tr><th>Variable</th><th>Label</th><th>Values / Coding</th><th class="n">Missing</th></tr></thead><tbody>' +
+            '<tr><td><code>resp_id</code></td><td>Participant Unique ID</td><td>1001–1240</td><td class="n">0 (0.0%)</td></tr>' +
+            '<tr><td><code>group_cond</code></td><td>Study Condition</td><td>1 = Intervention, 2 = Control</td><td class="n">0 (0.0%)</td></tr>' +
+            '<tr><td><code>lead_eff_total</code></td><td>Leadership Efficacy Scale (Mean)</td><td>Continuous (1.00–5.00), &alpha; = .87</td><td class="n">2 (0.8%)</td></tr>' +
+            '</tbody></table>'
+    },
+    syntax: {
+      title: 'Sample Deliverable: Reproducible R / SPSS Script',
+      service: 'Quantitative Research Analysis (SPSS / R)',
+      html: '<p style="margin-top:0;color:var(--muted)">Scripts are structured by research question and clearly commented:</p>' +
+            '<pre class="code-snippet">* =========================================================.\n* STUDY: Educational Leadership &amp; Institutional Governance\n* STEP 3: Multiple Regression predicting Faculty Readiness\n* =========================================================.\nREGRESSION\n  /DESCRIPTIVES MEAN STDDEV CORR SIG N\n  /STATISTICS COEFF OUTS CI(95) R ANOVA COLLIN TOL\n  /DEPENDENT faculty_readiness\n  /METHOD=ENTER gov_clarity training_hours tech_support.</pre>'
+    },
+    tables: {
+      title: 'Sample Deliverable: APA 7th Regression Table',
+      service: 'Quantitative Research Analysis (SPSS / R)',
+      html: '<p style="margin-top:0;color:var(--muted)">Formatted with proper borders, italics, confidence intervals, and notes:</p>' +
+            '<table class="apa-table"><thead><tr><th>Predictor</th><th class="n"><em>B</em></th><th class="n"><em>SE</em></th><th class="n"><em>&beta;</em></th><th class="n"><em>t</em></th><th class="n"><em>p</em></th></tr></thead><tbody>' +
+            '<tr><td>(Intercept)</td><td class="n">1.14</td><td class="n">0.24</td><td class="n">—</td><td class="n">4.75</td><td class="n">&lt; .001</td></tr>' +
+            '<tr><td>Governance Clarity</td><td class="n">0.46</td><td class="n">0.08</td><td class="n">.39</td><td class="n">5.75</td><td class="n">&lt; .001</td></tr>' +
+            '<tr><td>Training Support</td><td class="n">0.29</td><td class="n">0.07</td><td class="n">.27</td><td class="n">4.14</td><td class="n">&lt; .001</td></tr>' +
+            '</tbody></table><p class="table-note">Note. R<sup>2</sup> = .34, F(2, 187) = 48.12, p &lt; .001.</p>'
+    },
+    results: {
+      title: 'Sample Deliverable: Written Results Narrative',
+      service: 'Quantitative Research Analysis (SPSS / R)',
+      html: '<p style="margin-top:0;color:var(--muted)">Plain-language interpretation paired with exact statistical evidence:</p>' +
+            '<div class="ed-prose">"To examine whether governance clarity and training support predicted faculty readiness (Research Question 2), a multiple linear regression was conducted. Preliminary checks confirmed no violations of normality, linearity, or homoscedasticity (all VIFs &lt; 1.42). The overall model was statistically significant, <em>F</em>(2, 187) = 48.12, <em>p</em> &lt; .001, accounting for 34.0% of the variance in readiness scores. Both governance clarity (&beta; = .39, <em>p</em> &lt; .001) and training support (&beta; = .27, <em>p</em> &lt; .001) emerged as positive predictors."</div>'
+    },
+    methods: {
+      title: 'Sample Deliverable: Methodology Section Write-up',
+      service: 'Quantitative Research Analysis (SPSS / R)',
+      html: '<p style="margin-top:0;color:var(--muted)">Clear documentation of instruments, sampling, and analytical procedures:</p>' +
+            '<div class="ed-prose">"Data were analyzed using R (Version 4.4) and IBM SPSS Statistics (Version 29). Internal consistency for each multi-item construct was assessed using Cronbach’s alpha (&alpha; ranging from .81 to .89). Prior to inferential testing, data were screened for missing values and univariate outliers..."</div>'
+    },
+    changelog: {
+      title: 'Sample Deliverable: Editorial Change Log & Memo',
+      service: 'Manuscript Editing (Developmental / Copyediting)',
+      html: '<p style="margin-top:0;color:var(--muted)">Alongside your Tracked Changes file, you receive a summary of major editorial decisions:</p>' +
+            '<ul class="tick sq" style="margin-top:8px">' +
+            '<li><strong>Terminology Standardization:</strong> Unified recurring construct names across Chapters 2–5 to match Table 1 labels.</li>' +
+            '<li><strong>Tense &amp; Voice Alignment:</strong> Adjusted literature review reporting verbs and past-tense methodology descriptions per APA 7th guidelines.</li>' +
+            '<li><strong>Zotero Citation Audit:</strong> Reconciled 14 in-text citations with the reference list and supplied missing DOIs.</li>' +
+            '</ul>'
+    }
+  };
+
+  var selectedService = 'Quantitative Research Analysis (SPSS / R)';
+  var activePreviewService = '';
+
+  function getInitialTheme() {
+    try {
+      var saved = localStorage.getItem('abenezer_theme');
+      if (saved === 'dark' || saved === 'light') return saved;
+    } catch (e) {}
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  }
+
+  function applyTheme(theme) {
+    var htmlEl = document.documentElement;
+    var iconSun = document.getElementById('themeIconSun');
+    var iconMoon = document.getElementById('themeIconMoon');
+    htmlEl.setAttribute('data-theme', theme);
+    if (iconSun && iconMoon) {
+      iconSun.style.display = theme === 'dark' ? 'block' : 'none';
+      iconMoon.style.display = theme === 'dark' ? 'none' : 'block';
+    }
+    try {
+      localStorage.setItem('abenezer_theme', theme);
+    } catch (e) {}
+  }
+
+  function updateBriefOutput() {
+    var docTypeSelect = document.getElementById('docTypeSelect');
+    var timelineInput = document.getElementById('timelineInput');
+    var scopeNotesInput = document.getElementById('scopeNotesInput');
+    var briefOutputText = document.getElementById('briefOutputText');
+    if (!docTypeSelect || !timelineInput || !scopeNotesInput || !briefOutputText) return;
+
+    var docType = docTypeSelect.value;
+    var timeline = timelineInput.value.trim() || 'Flexible / To be discussed';
+    var notes = scopeNotesInput.value.trim() || 'Looking for clean, reproducible deliverables and clear feedback.';
+
+    var summary =
+      'PROJECT BRIEF FOR ABENEZER\n' +
+      '----------------------------------------\n' +
+      'Service Needed : ' + selectedService + '\n' +
+      'Project Type   : ' + docType + '\n' +
+      'Target Timeline: ' + timeline + '\n' +
+      'Scope & Notes  : ' + notes + '\n' +
+      '----------------------------------------\n' +
+      'Requested Deliverables: Clean files, tracked changes / reproducible syntax, and review walkthrough.';
+
+    briefOutputText.textContent = summary;
+  }
+
+  function showToast(msg) {
+    var copyToast = document.getElementById('copyToast');
+    if (!copyToast) return;
+    copyToast.textContent = msg;
+    setTimeout(function() {
+      if (copyToast.textContent === msg) {
+        copyToast.textContent = '';
+      }
+    }, 3500);
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      showToast('Project brief copied to clipboard.');
+    } catch (e) {
+      showToast('Select the text above to copy.');
+    }
+    document.body.removeChild(ta);
+  }
+
+  function closePreviewModal() {
+    var previewModal = document.getElementById('previewModal');
+    if (previewModal) previewModal.classList.remove('open');
+  }
+
+  function init() {
+    applyTheme(getInitialTheme());
+    updateBriefOutput();
+
+    var docTypeSelect = document.getElementById('docTypeSelect');
+    var timelineInput = document.getElementById('timelineInput');
+    var scopeNotesInput = document.getElementById('scopeNotesInput');
+
+    if (docTypeSelect) docTypeSelect.addEventListener('change', updateBriefOutput);
+    if (timelineInput) timelineInput.addEventListener('input', updateBriefOutput);
+    if (scopeNotesInput) scopeNotesInput.addEventListener('input', updateBriefOutput);
+  }
+
+  // Document-level event delegation works reliably on GitHub Pages, htmlpreview.github.io, and mobile browsers
+  document.addEventListener('click', function(e) {
+    var target = e.target;
+    if (!target || !target.closest) return;
+
+    // Smooth-scroll internal anchor links without breaking GitHub subpath or HTML preview URLs
+    var anchor = target.closest('a[href^="#"]');
+    if (anchor) {
+      var hash = anchor.getAttribute('href');
+      if (hash && hash.length > 1) {
+        var dest = document.getElementById(hash.slice(1));
+        if (dest) {
+          e.preventDefault();
+          dest.scrollIntoView({ behavior: 'smooth' });
+          var mobileDrawer = document.getElementById('mobileDrawer');
+          var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+          if (mobileDrawer && mobileDrawer.classList.contains('open')) {
+            mobileDrawer.classList.remove('open');
+            if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          }
+        }
+      }
+      return;
+    }
+
+    // Theme toggle button
+    if (target.closest('#themeToggleBtn')) {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(current);
+      return;
+    }
+
+    // Mobile drawer menu button
+    var menuBtn = target.closest('#mobileMenuBtn');
+    if (menuBtn) {
+      var drawer = document.getElementById('mobileDrawer');
+      if (drawer) {
+        var isOpen = drawer.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      }
+      return;
+    }
+
+    // Hero Workbench Tabs
+    var wbTab = target.closest('[data-wb-tab]');
+    if (wbTab) {
+      var tabKey = wbTab.getAttribute('data-wb-tab');
+      each(document.querySelectorAll('[data-wb-tab]'), function(t) {
+        var active = t === wbTab;
+        t.classList.toggle('active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      var panels = {
+        combined: document.getElementById('wb-panel-combined'),
+        script: document.getElementById('wb-panel-script'),
+        redline: document.getElementById('wb-panel-redline')
+      };
+      Object.keys(panels).forEach(function(k) {
+        if (panels[k]) panels[k].classList.toggle('active', k === tabKey);
+      });
+      return;
+    }
+
+    // R / SPSS Syntax Switcher
+    var syntaxBtn = target.closest('[data-syntax]');
+    if (syntaxBtn) {
+      var sMode = syntaxBtn.getAttribute('data-syntax');
+      each(document.querySelectorAll('[data-syntax]'), function(b) {
+        b.classList.toggle('active', b === syntaxBtn);
+      });
+      var syntaxDisplay = document.getElementById('syntaxDisplay');
+      if (syntaxDisplay && syntaxSnippets[sMode]) {
+        syntaxDisplay.innerHTML = syntaxSnippets[sMode];
+      }
+      return;
+    }
+
+    // Editorial Mode Switcher
+    var edBtn = target.closest('[data-edmode]');
+    if (edBtn) {
+      var eMode = edBtn.getAttribute('data-edmode');
+      each(document.querySelectorAll('[data-edmode]'), function(b) {
+        b.classList.toggle('active', b === edBtn);
+      });
+      var proseEl = document.getElementById('editorialProseDisplay');
+      var commentEl = document.getElementById('editorialCommentBox');
+      if (proseEl && commentEl && edModes[eMode]) {
+        proseEl.innerHTML = edModes[eMode].html;
+        commentEl.innerHTML = edModes[eMode].note;
+      }
+      return;
+    }
+
+    // Quantitative Method Explorer Pills
+    var methodPill = target.closest('[data-method]');
+    if (methodPill) {
+      var mKey = methodPill.getAttribute('data-method');
+      each(document.querySelectorAll('[data-method]'), function(p) {
+        p.classList.toggle('active', p === methodPill);
+      });
+      var methodPanel = document.getElementById('methodDetailPanel');
+      var mInfo = methodData[mKey];
+      if (methodPanel && mInfo) {
+        methodPanel.innerHTML =
+          '<strong>' + mInfo.title + '</strong>' +
+          mInfo.body +
+          '<div><span class="method-meta">' + mInfo.meta + '</span></div>';
+      }
+      return;
+    }
+
+    // Reader Stage Diagnostic Helper
+    var stageBtn = target.closest('[data-stage]');
+    if (stageBtn) {
+      var sKey = stageBtn.getAttribute('data-stage');
+      each(document.querySelectorAll('[data-stage]'), function(b) {
+        b.classList.toggle('selected', b === stageBtn);
+      });
+      var stageResult = document.getElementById('stageHelperResult');
+      if (stageResult && stageRecommendations[sKey]) {
+        stageResult.textContent = stageRecommendations[sKey];
+        stageResult.style.color = 'var(--ink)';
+        stageResult.style.fontWeight = '500';
+      }
+      return;
+    }
+
+    // Deliverable Sample Preview Modal Open
+    var previewBtn = target.closest('[data-preview]');
+    if (previewBtn) {
+      var pKey = previewBtn.getAttribute('data-preview');
+      var sample = deliverableSamples[pKey];
+      var modal = document.getElementById('previewModal');
+      var mTitle = document.getElementById('modalTitle');
+      var mBody = document.getElementById('modalBodyContent');
+      if (sample && modal && mTitle && mBody) {
+        mTitle.textContent = sample.title;
+        mBody.innerHTML = sample.html;
+        activePreviewService = sample.service;
+        modal.classList.add('open');
+      }
+      return;
+    }
+
+    // Modal Close Buttons or Backdrop Click
+    if (target.closest('#closeModalBtn') || target.closest('#modalDismissBtn') || target.id === 'previewModal') {
+      closePreviewModal();
+      return;
+    }
+
+    // Modal "Include in Project Brief" Button
+    if (target.closest('#modalUseScopeBtn')) {
+      if (activePreviewService) {
+        each(document.querySelectorAll('#serviceChipGroup .choice-chip'), function(c) {
+          c.classList.toggle('selected', c.getAttribute('data-service') === activePreviewService);
+        });
+        selectedService = activePreviewService;
+        updateBriefOutput();
+      }
+      closePreviewModal();
+      var inquireSection = document.getElementById('inquire');
+      if (inquireSection) inquireSection.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+
+    // Project Brief Service Selection Chips
+    var serviceChip = target.closest('#serviceChipGroup .choice-chip');
+    if (serviceChip) {
+      each(document.querySelectorAll('#serviceChipGroup .choice-chip'), function(c) {
+        c.classList.remove('selected');
+      });
+      serviceChip.classList.add('selected');
+      selectedService = serviceChip.getAttribute('data-service');
+      updateBriefOutput();
+      return;
+    }
+
+    // Copy Brief Button
+    if (target.closest('#copyBriefBtn')) {
+      var outEl = document.getElementById('briefOutputText');
+      var text = outEl ? outEl.textContent : '';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() {
+          showToast('Project brief copied to clipboard.');
+        }).catch(function() {
+          fallbackCopy(text);
+        });
+      } else {
+        fallbackCopy(text);
+      }
+      return;
+    }
+
+    // Open in Email App Button
+    if (target.closest('#emailBriefBtn')) {
+      var briefEl = document.getElementById('briefOutputText');
+      var bodyText = briefEl ? briefEl.textContent : '';
+      var subject = encodeURIComponent('Project Inquiry: ' + selectedService);
+      var body = encodeURIComponent(bodyText);
+      window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+      return;
+    }
+
+    // Reset Brief Button
+    if (target.closest('#resetBriefBtn')) {
+      selectedService = 'Quantitative Research Analysis (SPSS / R)';
+      each(document.querySelectorAll('#serviceChipGroup .choice-chip'), function(c, idx) {
+        c.classList.toggle('selected', idx === 0);
+      });
+      var docSel = document.getElementById('docTypeSelect');
+      var timeIn = document.getElementById('timelineInput');
+      var notesIn = document.getElementById('scopeNotesInput');
+      if (docSel) docSel.selectedIndex = 0;
+      if (timeIn) timeIn.value = 'Within 2–3 weeks';
+      if (notesIn) notesIn.value = '';
+      updateBriefOutput();
+      showToast('Brief reset to defaults.');
+      return;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closePreviewModal();
+    }
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
